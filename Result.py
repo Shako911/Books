@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from PyQt5 import QtCore, QtGui, QtWidgets
-from widget11 import Ui_Form  # ეს აუცილებელია მეორე ფორმის ჩასამატებლად
+from widget11 import Ui_Form  
 from widget12 import Ui_Form
 from widget13 import Ui_Form
 
@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
         self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton.setObjectName("pushButton")
         self.pushButton.clicked.connect(self.check_selection)
-        self.pushButton.clicked.connect(self.check_selection1)# დააკავშირე ღილაკი
+        self.pushButton.clicked.connect(self.check_selection1)
         self.pushButton.clicked.connect(self.check_selection2)
         self.pushButton.clicked.connect(self.check_bank_selection)
 
@@ -163,7 +163,6 @@ class Ui_MainWindow(object):
         self.window.show()
 
 
-# მთავარი ფანჯრის გაშვების ნაწილი
 if __name__ == "__main__":
     import sys
 
